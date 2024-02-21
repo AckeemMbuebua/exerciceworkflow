@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
     - uses: Cyb3r-Jak3/html5validator-action
     - name: HTML5Validator
       with:
         root: /
         blacklist: invalid
-    - uses: actions/checkout@v3
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
