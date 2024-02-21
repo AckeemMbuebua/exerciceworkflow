@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: Cyb3r-Jak3/html5validator-action
     - name: HTML5Validator
+      uses: Cyb3r-Jak3/html5validator-action
       with:
         root: /
         blacklist: invalid
